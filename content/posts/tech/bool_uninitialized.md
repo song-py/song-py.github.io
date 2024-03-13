@@ -2,7 +2,7 @@
 title = 'Bool未初始化的奇怪问题'
 date = 2024-03-13T21:11:14+08:00
 tags = ['C++']
-draft = true
+draft = false
 +++
 
 一个bool未初始化的问题居然搞了几个小时， 赋值语句类似下面。
