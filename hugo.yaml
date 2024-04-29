@@ -112,9 +112,9 @@ params:
     label:
       text: "spy's Blog"
 
-    # analytics:  #谷歌分析
-    #     google:
-    #         SiteVerificationTag: "XYZabc"
+    analytics:  #谷歌分析
+        google:
+            SiteVerificationTag: "-f3k5mm67_XTll6dmLybVhH6DBWjYU9SEvhcscP_Eyw"
 
     # cover:
     #     hidden: true # hide everywhere but not in structured data
