@@ -15,13 +15,20 @@ python要么直接用requests库或更底层的urlib3，要么用selenium 库模
 
 1. chromedriver 要版本一致，路径要配置好
 2. option 增加参数避免webdriver 检测
-3. 滑动窗口检测，很有可能被判定为webdriver，想办法避免
-4. find_element 太麻烦了，要不停的对xpath
-5. 还要点击链接 switch windows 来获取招聘具体内容
-6. 查询框clear 清除不掉， 简单办法直接ctrl a 全选再修改
-7. 页面切换还要有点延时，不然找不到element
-8. 单线程跑有点慢，不用ip代理一会就被检测出是爬虫，懒得弄的
+3. find_element 太麻烦了，要不停的对xpath
+4. 还要点击链接 switch windows 来获取招聘具体内容
+5. 查询框clear 清除不掉， 简单办法直接ctrl a 全选再修改
+6. 页面切换还要有点延时，不然找不到element
 
-适配了51job， 再弄其他两家网站试试
+反爬程度   boss直聘 〉51job 〉智联招聘 〉 猎聘
+
+单线程跑有点慢，不用ip代理一会就被检测出是爬虫，懒得弄了。
+
+1. boss直聘需要点击按钮，按顺序识别图像，不加sleep很快就被识别出来
+2. 51job 是滑动窗口检测，很有可能被判定为webdriver，要想办法避免
+3. 智联只是登陆要用手机号，这个要搞服务中转
+4. 猎聘没碰到啥，只是搜索的职位很奇怪
+
+招聘网站不提供职位发布时间太蛋疼。
 
 代码直接看链接： [spider](https://github.com/song-py/spider)
