@@ -47,6 +47,10 @@ languages:
             url: posts/tech
           - name: 生活
             url: posts/life
+          - name: 备份
+            url: posts/backup
+          - name: web3
+            url: posts/web3
       menu:
         main:
           - identifier: home
