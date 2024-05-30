@@ -14,3 +14,5 @@ ags = ['web3', 'selenium']
 准备在 [登链社区](https://www.learnblockchain.cn) [github](https://github.com/lbc-team) 先学习学习。
 
 顺便记录一下学习的收获。
+
+前端、合约、后端，后端需求很少，合约要solidity、move、rust，还要熟悉现有的合约，时间不够啊。
