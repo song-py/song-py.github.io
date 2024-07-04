@@ -2,7 +2,7 @@
 title = 'web3 学习'
 date = 2024-05-26T22:44:31+08:00
 draft = false
-ags = ['web3', 'selenium']
+tags = ['web3', 'selenium']
 +++
 
 很久之前了解过一点区块链，最近有了一些时间，正好再重新学习一下web3。
