@@ -32,7 +32,7 @@ restic的存储术语为repository，备份期间生成的所有数据都以结�
     ├── snapshots
     │   └── 22a5af1bdc6e616f8a29579458c49627e01b32210d09adb288d1ecda7c5711ec
 
-repository由几个目录和一个称为config的顶级文件组成。对于存储在repository中的所有其他文件，文件的名称是存储ID的小写十六进制表示，这是文件内容的SHA-256散列。这允许通过在文件上运行程序sha256sum并将其输出与文件名进行比较，即可轻松验证文件的意外修改。
+repository由几个目录和一个称为config的顶级文件组成。对于存储在repository中的所有其他文件，文件的名称是ID的小写十六进制表示，这是文件内容的SHA-256散列。这允许通过在文件上运行程序sha256sum并将其输出与文件名进行比较，即可轻松验证文件的意外修改。
 除了存储在keys和data目录中的文件外，所有文件都在计数器模式（CTR）下使用AES-256加密。加密数据的完整性由Poly1305-AES消息身份验证代码（MAC）保护。data目录中的文件（“pack”）由多个部分组成，这些部分都经过独立加密和身份验证
 
 ## Config
@@ -54,7 +54,7 @@ type Config struct {
 
 ## Data
 
-data 目录存放的pack文件是有一个或者多个blob组成，pack的数据格式如下:
+data 目录存放的pack文件是由一个或者多个blob组成，pack的数据格式如下:
     EncryptedBlob1 || ... || EncryptedBlobN || EncryptedHeader || Header_Length
 
 ```golang
