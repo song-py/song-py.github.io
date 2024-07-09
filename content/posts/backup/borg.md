@@ -34,6 +34,7 @@ Borg 本身是一个命令行工具，但是macOS 和 Linux 下还可以使用[v
 ## 与restic的区别
 
 - restic有云后端，Borg通过ssh到远程Borg做客户端/服务器
-- Brog支持多种压缩算法，rstic最新版本只有zstd
+- Borg支持多种压缩算法，rstic最新版本只有zstd
 - Borg备份存储库仅由一个系统使用, restic 可以多个系统使用，重删效率更高
 - Borg没有多线程
+- Borg的windows版本支持比较麻烦
