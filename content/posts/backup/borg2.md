@@ -1,7 +1,8 @@
 +++
 title = '开源备份软件之BorgBackup 使用'
 date = 2024-07-09T14:40:23+08:00
-draft = true
+draft = false
+tags = ['备份', '开源', 'BorgBackup']
 +++
 
 与restic相同， BorgBackup 中也有两个基本概念：
