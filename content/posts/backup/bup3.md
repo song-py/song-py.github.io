@@ -1,7 +1,7 @@
 +++
 title = '开源备份软件之Bup存储'
 date = 2024-07-26T17:02:17+08:00
-draft = true
+draft = false
 tags = ['备份', '开源', 'Bup']
 +++
 
